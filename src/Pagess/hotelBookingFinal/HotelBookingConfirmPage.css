@@ -1,0 +1,109 @@
+/* Main container styling */
+.hotel-booking-confirm-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Center the card */
+.confirmation-card {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* Card title */
+.confirmation-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Hotel details */
+.hotel-details {
+  margin-bottom: 20px;
+}
+
+.hotel-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.hotel-location {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.hotel-amenities {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.amenity-icon {
+  color: #007bff;
+}
+.amenity-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Booking details */
+.booking-details {
+  text-align: left;
+  margin-top: 20px;
+  border-top: 1px solid #ecf0f1;
+  padding-top: 20px;
+}
+
+.booking-details p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.booking-details strong {
+  color: #34495e;
+}
+
+/* No details styling */
+.no-details {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+/* Footer styling */
+.footer-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+footer {
+  font-size: 14px;
+  color: #7f8c8d;
+}

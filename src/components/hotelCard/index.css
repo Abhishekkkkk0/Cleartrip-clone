@@ -1,0 +1,93 @@
+/* Set the height of the image section */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.img-section {
+  height: 400px; /* Increase the height to 350px */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Ensure each individual slide takes up full height of the container */
+.slick-slide {
+  height: 100%; /* Make sure the slide fills the height of the container */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+/* Ensure the image fits in the container without cropping */
+.img-section img {
+  width: 100%; /* Stretch the image to fill the width of the container */
+  height: 100%; /* Ensure the image takes up the full height of the container */
+  object-fit: contain; /* Ensure the image fits within the container without cropping */
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-arrow {
+  left: 10px; /* Position for the left arrow */
+}
+
+.next-arrow {
+  right: 10px; /* Position for the right arrow */
+}
+
+.slick-dots {
+  margin-top: 20px; /* Add space for dots below slider */
+}
+
+.name-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.rating-line {
+  font-weight: bold;
+}
+
+.rating-line.yellow {
+  color: yellow;
+}
+
+.rating-line.green {
+  color: green;
+}
+
+.star-line {
+  font-size: 14px;
+  color: #777;
+}
+
+.price-line {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.night-line{
+  color: rgb(185, 182, 182);
+  font-size: smaller;
+}

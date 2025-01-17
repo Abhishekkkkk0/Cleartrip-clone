@@ -1,0 +1,50 @@
+/* Container for each image */
+.image-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden; /* Hide any overflow caused by large images */
+  }
+  
+  /* Styling the image */
+  .image-container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Maintain the aspect ratio */
+    object-position: center; /* Center the image */
+  }
+  
+  /* Styling the arrows */
+  .arrows {
+    position: absolute;
+    top: 50%; /* Vertically center the arrows */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Position the arrows on left and right */
+    transform: translateY(-50%); /* Adjust vertical position */
+    z-index: 10; /* Ensure the arrows are on top of the image */
+  }
+  
+  .arrows button {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.8; /* Slightly transparent */
+  }
+  
+  .arrows button:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+    opacity: 1; /* Full opacity on hover */
+  }
+  
+  /* Optional: Add transition for smoother hover effects */
+  .arrows button {
+    transition: background 0.3s ease, opacity 0.3s ease;
+  }
+  

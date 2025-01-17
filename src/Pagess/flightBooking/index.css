@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper for the flight summary */
+.flight-summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch content to fill the width */
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Ensure it spans the full width of the screen */
+  background: linear-gradient(135deg, #f7f9fc, #ffffff);
+  padding: 20px;
+}
+
+/* Flight summary card styles */
+.flight-summary-card {
+  max-width: 800px; /* Set maximum width for readability */
+  width: 100%; /* Allow the card to stretch across available space */
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto; /* Center the card horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Flight card image styles */
+.flight-card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+}
+
+/* Flight card title */
+.flight-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Flight card details section */
+.flight-card-details {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+/* Flight time row */
+.flight-time-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.flight-source,
+.flight-destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-time {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.flight-location {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Flight duration and stops */
+.flight-duration {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Flight amenities section */
+.flight-amenities {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.flight-amenities h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.flight-amenities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flight-amenities li {
+  background-color: #f1f1f1;
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Flight price section */
+.flight-price {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.flight-price p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.flight-price h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Flight card actions (buttons) */
+.flight-card-actions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.back-btn:hover {
+  background-color: #e1e1e1;
+}
+
+.confirm-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.confirm-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Confirmation message */
+.confirmation-message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.confirmation-message h3 {
+  font-size: 1.5rem;
+  color: green;
+  font-weight: bold;
+}
+
+.view-bookings-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-bookings-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .flight-summary-card {
+    max-width: 95%; /* Take up more space on smaller screens */
+    padding: 15px;
+  }
+
+  .flight-time-row {
+    flex-direction: column; /* Stack time details vertically */
+    align-items: center;
+    gap: 10px; /* Add spacing between rows */
+  }
+
+  .flight-price h4 {
+    font-size: 1.5rem; /* Slightly smaller font for compact layout */
+  }
+
+  .confirm-btn,
+  .back-btn,
+  .view-bookings-btn {
+    font-size: 0.9rem; /* Slightly smaller font for buttons on small screens */
+    padding: 8px 16px;
+  }
+}

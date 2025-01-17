@@ -1,0 +1,177 @@
+/* Main container */
+.container {
+    flex-direction: row; /* Align text and search box side by side */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+    gap: 20px; /* Spacing between text and search box */
+}
+
+/* Styling for the text section */
+.search-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Set a width for alignment with search box */
+    padding-left: 10px; /* Add padding for alignment */
+    box-sizing: border-box;
+}
+
+/* Styling for the search box section */
+.search-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120%;
+    max-width: 600px; /* Match the width of the search box */
+    margin: 20px auto;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid rgba(233, 231, 231, 0.651);
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    background-color: #fff;
+}
+
+/* Passenger count section styling */
+.passenger-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Source and destination inputs */
+.search-data {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding-left: 10%;
+    padding-right: 30px;
+}
+
+.search-data input {
+    height: 45px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Add a dividing line between the inputs */
+.search-data input:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+/* Calendar and search button alignment */
+.down-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out items */
+    width: 50%; /* Set the container width */
+    gap: 20px; /* Add spacing between calendar and button */
+}
+
+.date-container {
+    width: 60%; /* Calendar takes up 60% of the container */
+}
+
+.search-btn {
+    width: 40%; /* Button takes up 40% of the container */
+    text-align: right; /* Align button to the right */
+}
+
+.search-btn button {
+    background-color: rgb(247, 119, 39); /* Button color */
+    color: white !important;
+    width: 150px;
+    max-width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn button:hover {
+    background-color: rgb(219, 95, 19); /* Hover effect */
+}
+
+/* Dropdown styling */
+.AirportSearch {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.AirportSearch div {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.AirportSearch div span {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+.AirportSearch div:hover {
+    background-color: #f5f5f5;
+}
+
+.AirportSearch div span,
+.AirportSearch div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch;
+    }
+
+    .search-text,
+    .search-item {
+        max-width: 100%; /* Full width for mobile */
+        padding: 0;
+    }
+
+    .down-container {
+        flex-direction: column; /* Stack calendar and button vertically */
+        align-items: stretch;
+    }
+
+    .date-container,
+    .search-btn {
+        width: 100%; /* Full width for calendar and button */
+    }
+}

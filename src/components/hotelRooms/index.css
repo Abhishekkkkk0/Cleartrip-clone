@@ -1,0 +1,69 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.room-head {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    margin: 20px;
+  }
+  
+  .room-type h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .room-size p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .room-details {
+   
+    margin-bottom: 15px;
+  }
+  
+  .room-bed, .room-cancellation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .room-bed img, .room-cancellation img {
+    margin-right: 8px;
+  }
+  
+  .room-bed p, .room-cancellation p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .room-price {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .room-head .button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .room-head .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .room-head .button:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,146 @@
+/* Container for the entire hotel results page */
+.hotel-results-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Navigation bar for logo and login/signup button */
+.nav-hotel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Sort bar section */
+.sort-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-a {
+  display: flex;
+  align-items: center;
+}
+
+.sort-a button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort-a button:hover {
+  background-color: #0056b3;
+}
+
+/* Hotel cards container layout */
+.hotel-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Individual hotel card styles */
+.hotel-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside hotel card */
+.hotel-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Hotel card content section */
+.hotel-card-content {
+  padding: 16px;
+}
+
+.hotel-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.hotel-card-info {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Price and rating section in hotel card */
+.hotel-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.hotel-card-price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.hotel-card-rating {
+  display: flex;
+  align-items: center;
+  color: #f39c12;
+}
+
+.hotel-card-rating span {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+/* Popover content for sorting */
+.sort-popover {
+  padding: 16px;
+  width: 300px;
+}
+
+.sort-popover h6 {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.sort-popover .MuiButton-root {
+  margin-right: 8px;
+}
+
+/* Skeleton loader styles */
+.skeleton-box {
+  padding: 16px;
+  max-width: 300px;
+}
+
+.skeleton-box .MuiSkeleton-rectangular {
+  margin-bottom: 8px;
+}
+
+.skeleton-box .MuiSkeleton-text {
+  margin-top: 8px;
+}

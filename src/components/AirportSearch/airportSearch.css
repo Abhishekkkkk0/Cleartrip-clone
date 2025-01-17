@@ -1,0 +1,80 @@
+.airport-suggestions {
+  position: absolute; /* Align dropdown relative to parent container */
+  top: 100%; /* Place it directly below the input */
+  left: 0;
+  right: 0;
+  max-height: 200px; /* Limit dropdown height */
+  overflow-y: auto; /* Add scroll for overflow */
+  background-color: #fff; /* Background for dropdown */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visibility */
+  z-index: 1000; /* Ensure it appears above other elements */
+  padding: 8px; /* Add padding for dropdown items */
+  font-size: 14px; /* Default font size */
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .airport-suggestions {
+    font-size: 12px; /* Reduce font size on smaller screens */
+    max-height: 150px; /* Limit dropdown height */
+    padding: 6px; /* Reduce padding */
+  }
+
+  .airport-suggestions button {
+    font-size: 12px; /* Reduce button font size */
+    padding: 6px; /* Reduce button padding */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .airport-suggestions {
+    font-size: 13px; /* Adjust font size for medium screens */
+    max-height: 180px; /* Slightly smaller height */
+    padding: 7px; /* Adjust padding */
+  }
+
+  .airport-suggestions button {
+    font-size: 13px; /* Adjust button font size */
+    padding: 7px; /* Adjust button padding */
+  }
+}
+
+.airport-suggestions ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.airport-suggestions li {
+  margin-bottom: 4px; /* Add spacing between items */
+}
+
+.airport-suggestions button {
+  display: block; /* Make buttons stack vertically */
+  width: 100%; /* Ensure full width */
+  text-align: left; /* Align text to the left */
+  background: none; /* Remove button background */
+  border: none; /* Remove border */
+  padding: 8px; /* Add padding */
+  cursor: pointer;
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Text color */
+}
+
+.airport-suggestions button:hover {
+  background-color: #f0f0f0; /* Highlight hovered item */
+}
+
+.airport-suggestions .error {
+  color: red; /* Error message color */
+  font-size: 14px; /* Font size for error */
+}
+
+.airport-suggestions p {
+  font-size: 14px; /* General font size for messages */
+  color: #555; /* Text color for no results message */
+  margin: 8px 0; /* Add spacing */
+}

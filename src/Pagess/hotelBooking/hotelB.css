@@ -1,0 +1,193 @@
+/* General Styling */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Navigation Bar */
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .hotel-booking-container {
+   display: flex;
+   width: 100%; /* Ensure it takes full width */
+   justify-content: space-around;
+ }
+ 
+ .image-slider {
+   width: 40%; /* Ensure the slider takes up 60% of the container width */
+   max-width: 60%; /* Prevent it from exceeding the container's width */
+  
+  
+ }
+ 
+ .slick-slide img {
+   width:80%; /* Ensure images take up the full width of the container */
+   height: 400px; /* Set a fixed height to make the image rectangular */
+   object-fit: cover; /* Ensures the image covers the area, maintaining aspect ratio */
+   object-position: center; /* Center the image inside the container */
+   border-radius: 15px;
+ }
+ 
+ 
+ 
+ 
+  
+  .auth-section .auth-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #f15a24;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .auth-section .auth-button:hover {
+    background-color: #d94b1d;
+  }
+  
+  /* Hotel Details Section */
+ .hotel-name{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.167;
+    letter-spacing: 0em;
+ }
+ .hotel-amenities{
+   margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.167;
+    letter-spacing: 0em;
+ }
+ .hotel-location{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.00rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    color: rgb(128, 128, 128);
+ }
+ .hotel-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+ }
+ .hotel-rating p{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: rgb(17, 166, 112);
+ }
+ .hotel-rating img{
+    width: 25px;
+    height: 25px;
+ }
+ .hotel-description{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+ }
+ .hotel-discription-head{
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+    background-color: rgb(255, 255, 255);
+ }
+ .hotel-description img{
+    width: 25px;
+    height: 25px;
+ }
+ .breakfast-first{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+ }
+ .breakfast-second{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: rgba(0, 0, 0, 0.6);
+ }
+ .Amenities{
+   padding-top: 15px;
+ }
+ .Amenities ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .Amenities li {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+ .head p{
+  font-size:  35px;
+ }
+ 
+ .amenity-icon {
+   margin-right: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .amenity-item span {
+   font-size: 16px;
+ }
+ .room-fare{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid lightgrey;
+  padding: 0px 10px;
+  border-radius: 10px;
+ }
+ .room-fare button{
+  margin-bottom: 15px;
+ }
+ .fare-price{
+  
+  font-size: x-large;
+ }
+ .night-line{
+  font-size: small;
+ }
+ .room-selection{
+  padding-left: 10%;
+ }
+ .head{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+ }
+ .rooms-comp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+ }

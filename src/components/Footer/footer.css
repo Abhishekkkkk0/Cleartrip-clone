@@ -1,0 +1,123 @@
+/* Footer Container */
+.footer-container {
+    background-color: #f7f7f7;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+    }
+  }
+  .footer-info {
+    display: flex;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: rgb(159, 158, 158);
+  }
+  .footer-info-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+  }
+  /* Links Section */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .footer-links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  
+  .footer-links li {
+    list-style: none;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  a{
+    color: inherit;
+    text-decoration: inherit;
+  }
+  /* Footer Bottom Section */
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .footer-bottom ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #757575;
+  }
+  
+  .footer-bottom li {
+    list-style: none;
+  }
+  
+  .footer-bottom .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #757575;
+  }
+  
+  .footer-bottom .social-icons a {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom .social-icons a:hover {
+    color: #000;
+  }
+  
+  .footer-social{
+    display: flex;
+    gap: 10px;
+  }
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .footer-links ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+  
+    .footer-bottom ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .footer-bottom .social-icons {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+  

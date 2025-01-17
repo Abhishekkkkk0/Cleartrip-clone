@@ -1,0 +1,19 @@
+.static-header {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 125px;
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add some padding for spacing */
+}
+
+.header-item {
+  font-size: 16px;
+  font-weight: 600; /* Slightly bold text for visibility */
+  color: #333; /* Dark gray text color */
+  margin-right: 20px; /* Space between header items */
+  flex-shrink: 0; /* Prevent shrinking of items */
+}
+
+.static-header .header-item:first-child {
+  margin-left: 0; /* Ensure the first item aligns perfectly with the left edge */
+}

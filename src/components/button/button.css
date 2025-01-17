@@ -1,0 +1,43 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    margin: 1vh;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(255,79,23);
+    margin-top: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for responsiveness */
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .btn {
+        height: 35px; /* Reduce height */
+        width: 120px; /* Reduce width */
+        padding: 10px; /* Adjust padding */
+        font-size: 12px; /* Reduce font size */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .btn {
+        height: 38px; /* Slightly smaller height */
+        width: 140px; /* Slightly smaller width */
+        padding: 11px; /* Adjust padding */
+        font-size: 12.5px; /* Adjust font size */
+    }
+}
+
+/* Add hover effect */
+.btn:hover {
+    background-color: rgb(41, 92, 184); /* Slightly darker background on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}

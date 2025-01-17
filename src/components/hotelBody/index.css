@@ -1,0 +1,136 @@
+/* Container and General Styling */
+.hotel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 16px;
+  box-sizing: border-box; /* Include padding in total width calculation */
+  height: 100%; /* Ensure the container covers the available height */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between the header and input fields */
+}
+
+/* Hotel Header */
+.hotel-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.hotel-header h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Search Item Box */
+.hotel-search-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 70px; /* Add padding to prevent overlap with the button */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Input Wrapper (City Selector) */
+.hotel-input-wrapper {
+  position: relative;
+}
+
+/* Suggestions List Styling */
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  max-height: 200px; /* To limit the height of the suggestions list */
+  overflow-y: auto; /* Add scroll if the list is too long */
+}
+
+/* Hotel Details Wrapper (Calendar + Guest Room Selector) */
+.hotel-details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding-top: 20px; /* Adds space between the input section and calendar/room selector */
+}
+
+/* Calendar Styling (Aligned Horizontally) */
+.hotel-calendar {
+  display: flex;
+  gap: 16px; /* Space between Check-in and Check-out */
+  flex: 2;
+}
+
+.hotel-calendar label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Room/Guest Section */
+.hotel-room-guest {
+  flex: 1;
+  min-width: 200px; /* Prevent shrinking */
+}
+
+/* Button Wrapper */
+.hotel-button-wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it appears above other components */
+}
+
+/* Button Styling */
+.hotel-search-button {
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.hotel-search-button:hover {
+  background-color: #e05500;
+}
+
+/* List Styling */
+.suggestions-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.suggestion-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f4f4f4;
+}
+
+.suggestion-image {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}

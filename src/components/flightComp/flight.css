@@ -1,0 +1,183 @@
+/* Main Flight Card */
+.flight-card {
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Expanded State */
+.flight-card.expanded {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Upper Info Section */
+.upper-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Space between columns */
+}
+
+/* Airline Image and Name */
+.flight-image-name {
+  display: flex;
+  flex-direction: column; /* Stack image and name vertically */
+  align-items: center; /* Center them horizontally */
+  gap: 8px; /* Space between the image and the name */
+}
+
+.flight-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flight-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.low-seats {
+  /* Light red */
+  color: #cc0000; /* Darker red text */
+}
+
+/* Styling for available seats (light green) */
+.available-seats {
+  /* Light green */
+  color: #006600; /* Darker green text */
+}
+
+/* Flight Details Row */
+.flight-details {
+  display: flex;
+  padding-left: 60px;
+  align-items: center; /* Align items vertically */
+  width: 100%;
+  gap: 20px; /* Add space between each item */
+}
+
+.flight-item {
+  text-align: center; /* Center-align text */
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1; /* Distribute space evenly among items */
+}
+
+/* Book Button */
+.book-button {
+  margin-left: auto; /* Push the button to the far right */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  color: blue !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+/* Expanded Details Section */
+.expanded-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 25px;
+  max-height: 0; /* Start with 0 height */
+  opacity: 0; /* Start with 0 opacity */
+  overflow: hidden; /* Hide content initially */
+  padding-left: 0; /* Start with no padding */
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+}
+
+.flight-card.expanded .expanded-details {
+  max-height: 1000px; /* Expanded state height */
+  opacity: 1; /* Fade in when expanded */
+  padding-left: 24px; /* Transition padding-left */
+}
+
+/* Expanded Additional Details */
+.expanded-additional-details {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgray;
+  align-items: center;
+  gap: 30px;
+}
+
+.expanded-detail-item {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.expanded-detail-item span {
+  display: block;
+  margin-top: 8px;
+}
+
+.expanded-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expanded-image {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.hours {
+  color: rgb(77, 77, 77);
+}
+
+.amenities-list {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.amenity-item {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .upper-info {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 15px;
+  }
+
+  .flight-details {
+    flex-direction: column; /* Stack flight details vertically */
+    gap: 15px;
+  }
+}

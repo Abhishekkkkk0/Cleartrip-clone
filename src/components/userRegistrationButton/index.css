@@ -1,0 +1,27 @@
+/* Parent div styling */
+.user-registration-button {
+    display: inline-block; /* Ensures proper alignment for the button container */
+}
+
+/* Button styling */
+.user-registration-button button {
+    background-color: rgb(15, 107, 255); /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add some padding for a comfortable size */
+    font-size: 16px; /* Font size for better readability */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover state */
+.user-registration-button button:hover {
+    background-color: rgb(10, 85, 204); /* Slightly darker blue on hover */
+}
+
+/* Focus state (for accessibility) */
+.user-registration-button button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(15, 107, 255, 0.5); /* Add custom focus outline */
+}

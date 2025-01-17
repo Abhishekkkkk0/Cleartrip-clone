@@ -1,0 +1,75 @@
+/* Full-width wrapper for the navbar */
+.main-navbar-wrapper {
+  width: 100%; /* Ensures the grey line spans the full screen */
+  background-color: #fff; /* Background color to match navbar */
+  border-bottom: 1px solid #ccc; /* Add a grey line below the navbar */
+}
+
+/* Center the navbar content with a max width */
+.main-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px; /* Set max width for content */
+  margin: 0 auto; /* Center the navbar content */
+}
+
+/* Adjustments for other elements remain the same */
+.logo-container {
+  flex: 1;
+}
+
+.auth-section {
+  position: relative;
+}
+.auth-btn{
+  background-color: rgb(51,102,204);
+  color: white;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.auth-welcome-btn {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
