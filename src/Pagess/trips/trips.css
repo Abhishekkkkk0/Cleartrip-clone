@@ -19,7 +19,6 @@
 .nav-left {
   display: flex;
   flex-direction: column;
-  padding-left: 20vh; 
   gap: 40px;
 }
 
