@@ -157,9 +157,8 @@ function FlightResults() {
 
   return (
     <div className="flight-results">
-      <div >
+      
         <MainNavbar />
-      </div>
 
       <div className="main-layout">
         <div className="left-section">
@@ -244,41 +243,43 @@ function FlightResults() {
           </div>
 
           <div className="parent-container">
-            <StaticHeader />
-            {loading
-              ? Array(5)
-                  .fill()
-                  .map((_, index) => (
-                    <Skeleton
-                      key={index}
-                      animation="wave"
-                      height={150}
-                      variant="rectangular"
-                      style={{ margin: "10px 0" }}
-                    />
-                  ))
-              : filteredAndSortedFlights.map((flight) => {
-                  const { image, name } = getAirlineDetails(flight.airline);
-                  return (
-                    <FlightComponent
-                      key={flight.id}
-                      image={image}
-                      name={name}
-                      sourceAirport={sourceAirport}
-                      destinationAirport={destinationAirport}
-                      departureTime={flight.departureTime}
-                      duration={flight.duration}
-                      seats={flight.availableSeats}
-                      arrivalTime={flight.arrivalTime}
-                      source={flight.source}
-                      destination={flight.destination}
-                      stops={flight.stops}
-                      amenities={flight.amenities}
-                      price={flight.ticketPrice}
-                    />
-                  );
-                })}
-          </div>
+  <div className="static-header">
+    <StaticHeader />
+  </div>
+  {loading
+    ? Array(5)
+        .fill()
+        .map((_, index) => (
+          <Skeleton
+            key={index}
+            animation="wave"
+            height={150}
+            variant="rectangular"
+            style={{ margin: "10px 0" }}
+          />
+        ))
+    : filteredAndSortedFlights.map((flight) => {
+        const { image, name } = getAirlineDetails(flight.airline);
+        return (
+          <FlightComponent
+            key={flight.id}
+            image={image}
+            name={name}
+            sourceAirport={sourceAirport}
+            destinationAirport={destinationAirport}
+            departureTime={flight.departureTime}
+            duration={flight.duration}
+            seats={flight.availableSeats}
+            arrivalTime={flight.arrivalTime}
+            source={flight.source}
+            destination={flight.destination}
+            stops={flight.stops}
+            amenities={flight.amenities}
+            price={flight.ticketPrice}
+          />
+        );
+      })}
+</div>
         </div>
       </div>
     </div>
